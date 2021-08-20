@@ -15,7 +15,12 @@
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
-
+  <script src="https://kit.fontawesome.com/56fe9a6546.js" crossorigin="anonymous"></script>
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rampart+One&display=swap" rel="stylesheet">
+  <!-- stylesheets -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -25,7 +30,56 @@
 <body>
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <main>
+    <nav class="topnav" id="myTopnav">
+      <a href="#home" class="active">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#contact">CONTACT</a>
+
+    </nav>
+    <h1 class='title-name'>Nicholas Bérubé</h1>
+    <h2 class='subtitle-name'>Web developer</h2>
+    <h3>My favorite projects: </h3>
+    <ul>
+      <li>
+        <div>
+          <h4>Chess</h4>
+          <p>CLI Chess game made with Ruby</p>
+          <img src="img/chess_preview.png" alt="Chess game preview" width="600" height="450">
+          <a href="https://github.com/berubenic/Chess">Github</a>
+          <a href="https://replit.com/@NicholasBerube/Chess#README.md">Play in browser</a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Flight booker app</h4>
+          <p>This is a one-way flight booker.</p>
+          <img src="img/flight_booker_preview.png" alt="Flight Booker preview" width="500" height="450">
+          <a href="https://github.com/berubenic/odin-flight-booker">Github</a>
+          <a href="https://mighty-badlands-64879.herokuapp.com/">View in browser</a>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h4>Facebook clone (in-progress)</h4>
+          <p>Facebook's core features such as managing friends and creating posts.</p>
+          <img src="img/no_image.jpg" alt="No Image available" width="150" height="150">
+          <a href="https://github.com/berubenic/NotFacebook">Github</a>
+        </div>
+      </li>
+    </ul>
+
+    <a href="#other-projects">
+      <h4>Other projects: </h4>
+    </a>
+    <ul id='other-projects'>
+      <li>Messager app</li>
+      <li>Flickr stream</li>
+      <li>Connect Four</li>
+      <li>Etch-a-sketch</li>
+    </ul>
+  </main>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
