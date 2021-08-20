@@ -87,10 +87,19 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* Hide the link that should open and close the topnav on small screens */
-main {
+body {
   width: 80%;
   margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
 }
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .topnav {
   display: flex;
   flex-wrap: wrap;
@@ -115,12 +124,156 @@ main {
 
 .title-name {
   text-align: center;
+  font-family: 'Rampart One', cursive;
 }
 
 .subtitle-name {
   text-align: center;
+  font-style: italic;
+  margin-top: 0px;
+}
+
+.project-list {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: center;
+}
+
+.project-list h3 {
+  text-align: center;
+}
+
+.project-subtitle {
+  color: rgb(117, 115, 115);
+}
+
+.project-description {
+  text-align: left;
+  padding-bottom: 1em;
+}
+
+.project-footer {
+  margin-top: 1em;
+  margin-bottom: 1.5em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project-footer a {
+  display: flex;
+  justify-items: center;
+  text-decoration: none;
+}
+
+.image-container {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid black;
+}
+
+.profile-image {
+  max-width: 200px;
+  margin-top: 1.5em;
+  border: 0.8px solid black;
+  border-radius: 0.2em;
+}
+
+.chess-image {
+  max-width: 600px;
+}
+
+.booker-image {
+  max-width: 500px;
+}
+
+.no-image {
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.github-mark {
+ max-width: 32px;
+ padding-right: 0.6em;
+}
+/* Gamepad icon */
+.fas.fa-gamepad {
+ padding-right: 0.3em;
+ color: rgb(147, 148, 147);
+ text-decoration: none;
+}
+
+/* Eye icon */
+.far.fa-eye {
+ padding-right: 0.3em;
+ color: rgb(29, 132, 228);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
   
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+    main {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: center;
+    }
+
+    .image-container {
+      margin-left: 1em;
+    }
+
+    .chess-image {
+      max-width: 760px;
+    }
+
+    .booker-image {
+      max-width: 760px;
+    }
+
+    .no-image {
+      max-width: 760px;
+    }
+
+    .profile-container {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-evenly;
+    }
+
+    .profile-subcontainer {
+      align-self: center;
+    }
+
+    .project-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    }
+
+    .project-subcontainer {
+      align-self: center;
+    }
+
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
 
 /* ==========================================================================
    Helper classes
@@ -204,19 +357,7 @@ main {
   clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
 
-
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
 
 /* ==========================================================================
    Print styles.
