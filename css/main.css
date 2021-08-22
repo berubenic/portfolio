@@ -172,6 +172,15 @@ main {
   border: 1px solid black;
 }
 
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.profile-subcontainer {
+  align-self: center;
+}
 .profile-image {
   max-width: 200px;
   margin-top: 1.5em;
@@ -196,6 +205,53 @@ main {
  max-width: 32px;
  padding-right: 0.6em;
 }
+
+.linkedin-mark {
+  max-width: 32px;
+  padding-right: 0.5em;
+}
+
+.about-title {
+  text-align: center;
+}
+
+.about-description {
+  text-align: center;
+  color: rgb(117, 115, 115);
+}
+
+.about-text {
+  line-height: 1.7em;
+}
+
+.other-projects-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.other-projects-title {
+  align-self: center;
+}
+
+.contact-markers {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 1em;
+}
+
+.contact-markers a {
+  display: flex;
+  text-decoration: none;
+  align-self: center;
+}
+
 /* Gamepad icon */
 .fas.fa-gamepad {
  padding-right: 0.3em;
@@ -207,6 +263,12 @@ main {
 .far.fa-eye {
  padding-right: 0.3em;
  color: rgb(29, 132, 228);
+}
+
+/* Mail icon */
+.fas.fa-envelope {
+  color: black;
+  padding-right: 0.3em;
 }
 
 img {
@@ -246,6 +308,22 @@ img {
       max-width: 760px;
     }
 
+    .flickr-image {
+      max-width: 300px;
+    }
+
+    .messager-image {
+      max-width: 300px;
+    }
+
+    .connect-four-image {
+      max-width: 300px;
+    }
+
+    .etch-a-sketch-image {
+      max-width: 300px;
+    }
+
     .profile-container {
       display: flex;
       flex-direction: row-reverse;
@@ -264,6 +342,16 @@ img {
 
     .project-subcontainer {
       align-self: center;
+    }
+
+    .about-text {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .contact-title {
+      text-align: center;
+      margin-bottom: 2em;
     }
 
 }
