@@ -153,7 +153,7 @@ main {
 }
 
 .project-footer {
-  margin-top: 1em;
+  margin-top: 3em;
   margin-bottom: 1.5em;
   display: flex;
   flex-direction: row;
@@ -282,7 +282,7 @@ img {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-   @media only screen and (min-width: 35em) {
+   @media only screen and (min-width: 72em) {
     /* Style adjustments for viewports that meet the condition */
     main {
       display: flex;
@@ -290,10 +290,6 @@ img {
       flex-wrap: wrap;
       justify-content: center;
       align-content: center;
-    }
-
-    .image-container {
-      margin-left: 1em;
     }
 
     .chess-image {
@@ -309,19 +305,19 @@ img {
     }
 
     .flickr-image {
-      max-width: 300px;
+      max-width: 200px;
     }
 
     .messager-image {
-      max-width: 300px;
+      max-width: 200px;
     }
 
     .connect-four-image {
-      max-width: 300px;
+      max-width: 200px;
     }
 
     .etch-a-sketch-image {
-      max-width: 300px;
+      max-width: 200px;
     }
 
     .profile-container {
@@ -334,14 +330,19 @@ img {
       align-self: center;
     }
 
+    .project-subcontainer img {
+      border: 1px solid black;
+    }
+
     .project-container {
+      margin-top: 5em;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
     }
 
     .project-subcontainer {
-      align-self: center;
+      align-self: auto;
     }
 
     .about-text {

@@ -1,0 +1,303 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Nicholas Bérubé</title>
+    <meta name="description" content="Personal web development portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <script src="https://kit.fontawesome.com/56fe9a6546.js" crossorigin="anonymous"></script>
+    <!-- Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rampart+One&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+    <!-- Add your site or application content here -->
+    <nav class="topnav" id="myTopnav">
+        <a href="#home" class="active">ACCUEIL</a>
+        <a href="#about">À PROPOS</a>
+        <a href="#contact">CONTACT</a>
+        <a href="index.html">ENGLISH</a>
+
+    </nav>
+    <main>
+        <div class="profile-container" id='home'>
+            <div class='profile-subcontainer'>
+                <img src="img/profile.png" alt="Portrait of Nicholas Berube" , width="200px" height="auto"
+                    class="profile-image">
+            </div>
+            <div class='profile-subcontainer'>
+                <h1 class='title-name'>Nicholas Bérubé</h1>
+                <h2 class='subtitle-name'>Développeur Web</h2>
+            </div>
+        </div>
+
+
+        <ul class="project-list">
+            <h3>Mes Projets Favoris</h3>
+            <hr>
+            <li class="project-container">
+                <div class="project-subcontainer">
+                    <h3 class="project-title">Jeux d'Échec</h3>
+                    <h4 class="project-subtitle">Jeu fait avec Ruby jouer dans la ligne de commande</h4>
+                    <ul class="project-description">
+                        <li>Batît selons les principes de la Programation Orientée Objet:
+                            <ul>
+                                <li>Encapsulation: Rassembler la logique semblable dans de mêmes classes</li>
+                                <li>Abstraction: Connaître le moins possible des autres classes</li>
+                                <li>Héritance: Chaque type de pièce hérite de la même classe père nommée 'Piece' </li>
+                                <li>Polymorphisme: Chaque type de pièce peut agir comme la classe père 'Piece'</li>
+                            </ul>
+                        </li>
+                        <li>Entièrement tester avec RSpec.</li>
+                        <li>Sauvegarder une partie grâce à la sérialization</li>
+                    </ul>
+                </div>
+                <div class="project-subcontainer">
+                    <img src="img/chess_preview.png" alt="Chess game preview" width="600" height="auto"
+                        class="chess-image">
+                </div>
+            </li>
+            <div class="project-footer">
+                <a href="https://github.com/berubenic/Chess" target="_blank">
+                    <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                    Github
+                </a>
+                <a href="https://replit.com/@NicholasBerube/Chess#README.md" target="_blank"><i
+                        class="fas fa-gamepad fa-2x"></i>Jouer</a>
+            </div>
+            <hr>
+            <li class='project-container'>
+                <div class="project-subcontainer">
+                    <h3 class="project-title">Réservation de vol</h3>
+                    <h4 class="project-subtitle">Application qui permet de réserver un vol direct avec Ruby on Rails
+                    </h4>
+                    <ul class="project-description">
+                        <li>Intégration d'un centre de données PostgreSQL</li>
+                        <li>En utilisant <a href="https://devcenter.heroku.com/articles/scheduler"
+                                target="_blank">Heroku
+                                Scheduler</a>,
+                            deux tâches rake sont établit sur horaire pour continuellement créer de nouveaux vols</li>
+                        <li>Des tests sur les models, d'intégrations et de requêtes sont écrits avec RSpec</li>
+                        <li>Utilisation de Rails ActionMailer pour envoyer des courriels de confirmation lorsque un vol
+                            est réserver
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-subcontainer">
+                    <img src="img/flight_booker_preview.png" alt="Flight Booker preview" width="500" height="auto"
+                        class="booker-image">
+                </div>
+            </li>
+            <div class="project-footer">
+                <a href="https://github.com/berubenic/odin-flight-booker" target="_blank">
+                    <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                    Github
+                </a>
+                <a href="https://berube-flight-booker.herokuapp.com/" target="_blank"><i
+                        class="far fa-eye fa-2x"></i>Visualiser</a>
+            </div>
+            <hr>
+            <li class='project-container'>
+                <div class="project-subcontainer">
+                    <h3 class="project-title">Clone de Facebook (en-cours)</h3>
+                    <h4 class="project-subtitle">Réseau Social fait avec Ruby on Rails</h4>
+                    <ul class="project-description">
+                        <li>Authentification des usagers avec <a href="https://github.com/heartcombo/devise">Devise</a>
+                            et <a href="https://github.com/simi/omniauth-facebook">Omniauth
+                                Facebook</a></li>
+                        <li>Les utilisateurs peuvent gérer leurs amis et leurs publications</li>
+                        <li>Les utilisateurs on accées à un fil d'actualité qui contient les publications de leurs amis
+                        </li>
+                        <li>Téléverser des images grâce à ActiveStorage</li>
+                    </ul>
+                </div>
+                <div class="project-subcontainer">
+                    <img src="img/no_image.jpg" alt="No Image available" width="200" height="auto" class="no-image">
+                </div>
+            </li>
+            <div class="project-footer">
+                <a href="https://github.com/berubenic/NotFacebook" target="_blank">
+                    <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                    Github
+                </a>
+            </div>
+            <hr>
+            <a href="#other-projects">
+                <h4>Voir içi pour plus de projets </h4>
+            </a>
+        </ul>
+
+        <section>
+            <h3 id='about' class="about-title">À Propos</h3>
+            <h4 class="about-description">De Soldat à Forestier à Codeur</h4>
+            <p class="about-text">
+                Bonjour,
+                <br>
+                <br>
+                Je suis un développeur web autodidacte qui cherche à mettre ses nouvelles compétences à l’épreuve. Après
+                avoir joué du violon pendant 8 ans, j’ai servi trois ans dans les forces Armées Canadiennes en tant que
+                soldat d’infanterie. C’était comme un grand séjour en camping. Au moins, c’est ce qu’ils m’ont dit. À la
+                fin de mon contrat, je me suis dit qu’un travail dans le bois serait parfait pour moi, alors j’ai étudié
+                un an pour devenir Forestier. Apparemment, aimer se balader en forêt la fin de semaine n’est pas pareil
+                que de marcher à travers des forêts sauvages pleines de maringouins et de mouches noires, avec la
+                rencontre occasionnelle d’un chevreuil ou d’un ours. Je croise mes doigts que ceux-ci ne se trouveront
+                pas dans mon prochain lieux de travail.
+                <br>
+                <br>
+                J’ai grandi dans une famille de sept enfants. J’ai fait mon primaire en Anglais et mon secondaire en
+                Français. Les deux langues ont été utilisées chez moi comme si elle n’en était qu’une. J’ai donc
+                confiance d’affirmer que je suis parfaitement bilingue en français et en anglais. J’ai grandi de façon
+                modeste et j’ai appris que travailler fort et être honnête mène loin dans la vie. À travers ma famille,
+                l’apprentissage d’un nouvel instrument et mes expériences professionnelles du passé, je me suis prouvé
+                que j’ai la détermination pour accomplir n'importe quelles tâches qui se dirigent vers moi.
+                <br>
+                <br>
+                Les premières fois où j’ai codé, j’ai immédiatement accroché. Les défis quotidiens et les opportunités à
+                en apprendre d’avantages sont infinis. Le sentiment de résoudre un problème qui durait depuis trop
+                longtemps est sans mot. La communauté virtuelle est incroyable. C’est un monde dont je tiens à faire
+                partie. J’ai la discipline, le leadership et les habilités à travailler en équipe pour accomplir le
+                travail demandé. À travers ces défis et aspirations, je croîs en avoir assez pour être un membre clé
+                d'une équipe.
+                <br>
+                <br>
+                Sincérement,
+                <br>
+                Nicholas Bérubé
+            </p>
+        </section>
+
+
+        <section class="other-projects-container">
+            <h3 class="other-projects-title">Mes autres projets</h3>
+            <hr>
+            <ul id='other-projects' class="project-list">
+                <li class="project-container">
+                    <div class="project-subcontainer">
+                        <h3 class="project-title">Flickr stream</h3>
+                        <h4 class="project-subtitle">Intéragir avec l'API de Flickr</h4>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="img/flickr_stream_preview.png" alt="Flickr stream preview" width="760" height="auto"
+                            class="flickr-image">
+                    </div>
+                </li>
+                <div class="project-footer">
+                    <a href="https://github.com/berubenic/flickr-stream" target="_blank">
+                        <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                        Github
+                    </a>
+                    <a href="https://berube-flickr-stream.herokuapp.com/" target="_blank"><i
+                            class="far fa-eye fa-2x"></i>Visualiser</a>
+                </div>
+                <hr>
+                <li class="project-container">
+                    <div class="project-subcontainer">
+                        <h3 class="project-title">Messager App</h3>
+                        <h4 class="project-subtitle">Introduction à Rails ActionCable</h4>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="img/messager_preview.png" alt="Messager preview" width="760" height="auto"
+                            class="messager-image">
+                    </div>
+                </li>
+                <div class="project-footer">
+                    <a href="https://github.com/berubenic/Messager" target="_blank">
+                        <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                        Github
+                    </a>
+                </div>
+                <hr>
+                <li class="project-container">
+                    <div class="project-subcontainer">
+                        <h3 class="project-title">Connect Four</h3>
+                        <h4 class="project-subtitle">Jouer à un jeux avec Ruby</h4>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="img/connect_four_preview.png" alt="Flickr stream preview" width="760" height="auto"
+                            class="connect-four-image">
+                    </div>
+                </li>
+                <div class="project-footer">
+                    <a href="https://github.com/berubenic/Connect-Four" target="_blank">
+                        <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                        Github
+                    </a>
+                    <a href="https://replit.com/@NicholasBerube/Connect-Four#readme.md" target="_blank"><i
+                            class="fas fa-gamepad fa-2x"></i>Jouer</a>
+                </div>
+                <hr>
+                <li class="project-container">
+                    <div class="project-subcontainer">
+                        <h3 class="project-title">Etch-a-Sketch</h3>
+                        <h4 class="project-subtitle">Planche à dessin virtuel fait avec JavaScript</h4>
+
+                    </div>
+                    <div class="image-container">
+                        <img src="img/etch_a_sketch_preview.png" alt="Flickr stream preview" width="760" height="auto"
+                            class="etch-a-sketch-image">
+                    </div>
+                </li>
+                <div class="project-footer">
+                    <a href="https://github.com/berubenic/ETCH-A-SKETCH" target="_blank">
+                        <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                        Github
+                    </a>
+                    <a href="https://berube-etch-a-sketch.netlify.app/" target="_blank"><i
+                            class="far fa-eye fa-2x"></i>Visualiser</a>
+                </div>
+                <hr>
+            </ul>
+        </section>
+        <h3 class="contact-title" id="contact">Contacter moi</h3>
+        <div class="contact-markers">
+            <a href="https://www.linkedin.com/in/nicholas-berube-b60888164/" target="_blank">
+                <img src="img/linkedin_marker.png" alt="Linkedin mark" width="32px" height="auto" class="linkedin-mark">
+                Linkedin
+            </a>
+            <a href="https://github.com/berubenic" target="_blank">
+                <img src="img/github-mark.png" alt="GitHub Mark" width="32px" height="auto" class="github-mark">
+                Github
+            </a>
+            <a href="mailto:berubenic@gmail.com">
+                <i class="fas fa-envelope fa-2x"></i>
+                Courriel
+            </a>
+        </div>
+    </main>
+
+    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+    <script>
+        window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
